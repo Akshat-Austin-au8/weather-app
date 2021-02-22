@@ -1,0 +1,21 @@
+form {
+  margin-top: 3rem;
+}
+
+form input[name='city'],
+form input[name='country'] {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  border-radius: 0;
+}
+
+.button {
+  color: #ffffff;
+  background-color: #0000ff3b;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+}
