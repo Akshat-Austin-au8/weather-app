@@ -18,9 +18,13 @@ const Weather = (props) => {
         {/* show max and min temp */}
         {maxminTemp(props.temp_min, props.temp_max)}
         {/* show pressure */}
-        {pressure(props.pressure, props.humidity)}
+        {pressure(props.pressure)}
+        {/* show humidity */}
+        {humidity(props.humidity)}
         {/* show visibility */}
-        {visibility(props.visibility, props.speed)}
+        {visibility(props.visibility)}
+        {/* show speed */}
+        {speed(props.speed)}
 
         {/* Weather description */}
         <h4 className='py-3'>
@@ -45,22 +49,40 @@ function maxminTemp(min, max) {
   }
 }
 
-function pressure(pressure, humidity) {
-  if (pressure && humidity) {
+function pressure(pressure) {
+  if (pressure) {
     return (
       <h3>
         <span className='px-4'>Pressure: {pressure} hPa</span>
+      </h3>
+    )
+  }
+}
+
+function humidity(humidity) {
+  if (humidity) {
+    return (
+      <h3>
         <span className='px-4'>Humidity: {humidity} %</span>
       </h3>
     )
   }
 }
 
-function visibility(visibility, speed) {
-  if (visibility && speed) {
+function visibility(visibility) {
+  if (visibility) {
     return (
       <h3>
         <span className='px-4'>visibility: {visibility}</span>
+      </h3>
+    )
+  }
+}
+
+function speed(speed) {
+  if (speed) {
+    return (
+      <h3>
         <span className='px-4'> Wind Speed: {speed} km/h</span>
       </h3>
     )
