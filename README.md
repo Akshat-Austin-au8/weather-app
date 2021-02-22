@@ -1,7 +1,7 @@
 # Weather App
 A weather app which helps to see weather of a perticular state or city of specific country.
 ---
-Project Website Link Hosted On Netlify - [Weather App](https://weather-all.netlify.app/)
+Project Website Link Hosted On Netlify - [Weather App](https://memoris-p.herokuapp.com/)
 ---
 ## Developer
 **Akshat Austin**
